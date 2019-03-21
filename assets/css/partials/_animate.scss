@@ -1,0 +1,27 @@
+/* ============================
+Animations 
+=============================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1000ms;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+.slider-fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2000ms;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}

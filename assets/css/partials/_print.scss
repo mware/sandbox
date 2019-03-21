@@ -1,0 +1,41 @@
+/* print styles */   
+
+@media print {
+    .mobmenu {
+        display: none;
+    }
+
+    .landing-header-box {
+        background-color: $white !important;
+
+        h1, h5 {
+            color: black;
+        }
+    }
+
+    .full-width-banner {
+        background: transparent !important;
+
+    }
+
+    .full-width-banner__text.white-text {
+        color: black !important;
+    }
+
+    .banner-container {
+        height: auto;
+    }
+
+    .full-width-banner__text-wrap {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    button.banner-button, 
+    .button.banner-button, 
+    a.btn.banner-button, 
+    input[type="submit"].banner-button {
+        color: $blue;
+    }
+}

@@ -1,0 +1,234 @@
+/* ==========================================
+Elements 
+============================================= */
+
+html {
+  box-sizing: border-box;
+  height: 100%; //sticky footer
+}
+
+body {
+	min-height: 100%; //sticky footer
+	display: flex; //sticky footer
+	flex-direction: column; //sticky footer
+	background-color: $smoke;
+	color: $black;
+	@include link-trans;
+}
+
+// for sticky footer, need to move site footer to after closing of #page in footer.php
+#page {
+	flex: 1 0 auto;
+}
+
+::-moz-selection {
+    background: $gray;
+    text-shadow: none;
+}
+
+::selection {
+    background: $gray;
+    text-shadow: none;
+}
+
+#main {
+	position: relative;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.pr {
+	position: relative;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0
+}
+
+// hide map and data table under desktop
+.hidden-mobile {
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.black-bkgr {
+	background-color: $black;
+	color: $white;
+}
+
+.white-bkgr {
+	background: $white;
+}
+
+.warning-bkgr {
+	background-color: red;
+}
+
+
+/* ======================
+spacing and layout 
+========================= */
+// nix the smaller max widths on tablet 
+.container {
+	max-width: 1140px;
+}
+
+.container-narrow {
+	max-width: 600px;
+}
+
+.container.no-padding {
+	padding: 0;
+}
+
+.container.no-padding-mobile {
+	@include media-breakpoint-down(sm) {
+		padding-left: 0;
+		padding-right: 0;
+		.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	@include media-breakpoint-up(xl) {
+		flex-wrap: nowrap;
+	}
+	&.top {
+		align-items: flex-start;
+	}
+
+	&.bottom {
+		align-items: flex-end;
+	}
+	
+	&.left {
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&.right {
+		justify-content: flex-end;
+		
+	}
+	&.space-between {
+		justify-content: space-between;
+	}
+	&.nowrap {
+		flex-wrap: nowrap;
+	}
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
+
+	&.stretch {
+		align-items: stretch;
+	}
+}
+
+.flex-middle {
+	align-items: center;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.table {
+	display: table;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.horz-spacer {
+	display: inline-block;
+	width: 10px;
+}
+
+.horz-spacer-4x {
+	display: inline-block;
+	width: 40px;
+}
+
+.divider {
+	height: 1px;
+	width: 80%;
+	margin: 30px auto;
+	background-color: $border;
+}
+
+.no-horiz-padding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+

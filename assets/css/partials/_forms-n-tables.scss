@@ -1,0 +1,24 @@
+/* ==============================
+forms and tables 
+================================= */
+
+
+/* ## Forms
+--------------------------------------------- */
+
+input[type="text"],
+textarea,
+input[type="search"],
+input[type="email"],
+input[type="tel"] {
+	font-family: $headline;
+	font-weight: $regular;
+	font-size: 14px;
+	color: $black;
+	padding: 7px 13px;
+	background-color: $white;
+	border-radius: 0px;
+	@include link-trans;
+
+	
+}

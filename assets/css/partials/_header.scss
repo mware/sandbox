@@ -1,0 +1,149 @@
+/* header.scss ------------ */
+
+.custom-logo {
+
+	width: 150px;
+	height: auto;
+	padding: 8px 0;
+	margin: 10px auto;
+
+	@include media-breakpoint-up(md) {
+		width: 240px;
+		
+	}
+}
+
+#masthead {
+	background-color: $gray;
+}
+
+/*--------------------------------------------------------------
+## Default WordPress nav styles w/ some Partisan customizations
+--------------------------------------------------------------*/
+
+
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	font-size: 18px;
+	font-family: $headline;
+	color: $black;
+
+
+	ul {
+		// display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+
+			float: left;
+			position: absolute;
+			width: 100%;
+			top: 100%;
+			left: -999em;
+			z-index: 999;
+			opacity: 0.05;
+
+			@include link-trans;
+
+
+			ul {
+				left: 0;
+				top: -999em;
+
+			}
+
+			li {
+				padding: 10px 15px;
+				width: 100%;
+				margin: 0;
+				
+				@include link-trans;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				&:hover,
+				&:focus,
+				&.current-menu-item {
+					
+
+					&>a {
+						color: $black;
+					}
+				}
+
+				&:hover>ul,
+				&.focus>ul {
+					top: 100%;
+				}
+
+			}
+
+
+		}
+
+		li:hover>ul,
+		li.focus>ul {
+			left: auto;
+			opacity: 1;
+
+
+
+		}
+	}
+
+	
+
+	a {
+		display: block;
+		text-decoration: none;
+		font-weight: $bold;
+		color: $black;
+		border-bottom: none;
+
+		&:hover,
+		&:focus {
+			border-bottom: none;
+			color: $gray;
+		}
+	}
+}
+
+
+/* mobile nav styles */
+
+/* Small menu. */
+.menu-toggle {
+	display: block;
+}
+
+button.menu-toggle {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	border: none;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	@include link-trans;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: transparent;
+	}
+
+	&.is-active {
+		background-color: $gray;
+	}
+
+	&::before {
+		display: none !important;
+	}
+}
