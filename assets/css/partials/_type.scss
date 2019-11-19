@@ -2,6 +2,8 @@
 type 
 ================================= */
 
+
+// this sets rem units
 body {
 	font-family: $bodycopy;
 	font-size: 14px;
@@ -13,7 +15,6 @@ body {
 	@include media-breakpoint-up(lg) {
 		font-size: 17px;
 	}
-	
 }
 
 
