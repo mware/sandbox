@@ -6365,7 +6365,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #f5f5f5;
-  color: #222222;
+  color: #000;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -6454,7 +6454,7 @@ body {
 }
 
 .black-bkgr {
-  background-color: #222222;
+  background-color: #000;
   color: #fff;
 }
 
@@ -6710,7 +6710,7 @@ blockquote::before {
 }
 
 .black-text {
-  color: #222222;
+  color: #000;
 }
 
 .white-text {
@@ -6725,7 +6725,7 @@ p.error-text,
 div.error-text {
   padding: 6px 15px;
   margin: 10px 0;
-  background-color: #dc3545;
+  background-color: #D11045;
   color: #fff !important;
   font-size: 14px;
 }
@@ -6783,7 +6783,7 @@ h6,
   margin: 0 0 10px;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.1;
-  color: #222222;
+  color: #000;
   text-transform: none;
 }
 
@@ -6956,7 +6956,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #222222;
+  color: #000;
   text-decoration: underline;
 }
 
@@ -6973,7 +6973,7 @@ button,
 .btn {
   display: inline-block;
   border-radius: 4px;
-  background-color: #222222;
+  background-color: #000;
   color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -6981,7 +6981,7 @@ button,
   line-height: 1;
   font-size: 16px;
   text-transform: uppercase;
-  border: 2px solid #222222;
+  border: 2px solid #000;
 }
 
 .button:hover, .button:focus,
@@ -6990,7 +6990,7 @@ button:focus,
 .btn:hover,
 .btn:focus {
   background-color: #fff;
-  color: #222222;
+  color: #000;
   text-decoration: none;
 }
 
@@ -7007,7 +7007,7 @@ input[type="tel"] {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #222222;
+  color: #000;
   padding: 7px 13px;
   background-color: #fff;
   border-radius: 0px;
@@ -7059,7 +7059,7 @@ body {
 }
 
 #masthead {
-  background-color: blue;
+  background-color: #00A0DF;
   padding: 0;
 }
 
@@ -7180,9 +7180,9 @@ body {
 @media (min-width: 992px) {
   .main-navigation ul ul {
     width: 230px;
-    border-left: 1px solid blue;
-    border-right: 1px solid blue;
-    border-bottom: 1px solid blue;
+    border-left: 1px solid #0071CE;
+    border-right: 1px solid #0071CE;
+    border-bottom: 1px solid #0071CE;
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
             box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   }
@@ -7197,7 +7197,7 @@ body {
   padding: 10px 15px;
   width: 100%;
   margin: 0;
-  background-color: blue;
+  background-color: #032B57;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -7207,7 +7207,7 @@ body {
 }
 
 .main-navigation ul ul li:hover, .main-navigation ul ul li:focus, .main-navigation ul ul li.current-menu-item {
-  background-color: blue;
+  background-color: #0071CE;
 }
 
 .main-navigation ul ul li:hover > a, .main-navigation ul ul li:focus > a, .main-navigation ul ul li.current-menu-item > a {
@@ -7233,12 +7233,12 @@ body {
 }
 
 .main-navigation li.current-menu-item > a, .main-navigation li.current-menu-parent > a {
-  color: blue;
+  color: #032B57;
 }
 
 @media (max-width: 991.98px) {
   .main-navigation li.current-menu-item > a, .main-navigation li.current-menu-parent > a {
-    color: #17a2b8;
+    color: #6CDEE3;
   }
 }
 
@@ -7252,7 +7252,7 @@ body {
 
 .main-navigation a:hover, .main-navigation a:focus {
   border-bottom: none;
-  color: blue;
+  color: #032B57;
 }
 
 /* mobile nav styles */
@@ -7278,7 +7278,7 @@ button.menu-toggle:hover, button.menu-toggle:focus, button.menu-toggle:active {
 }
 
 button.menu-toggle.is-active {
-  background-color: blue;
+  background-color: #032B57;
 }
 
 button.menu-toggle::before {
@@ -7287,7 +7287,7 @@ button.menu-toggle::before {
 
 /* footer.scss ================ */
 .site-footer {
-  background-color: #222222;
+  background-color: #000;
   padding: 15px;
 }
 
