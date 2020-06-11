@@ -9,6 +9,13 @@
       $('body').removeClass('fixed-header');
     }
   });
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 450) {
+      $('body').addClass('fixed-header');
+    } else {
+      $('body').removeClass('fixed-header');
+    }
+  });
   $('.search-button-trigger').on("click", function () {
     $(this).toggleClass('open');
     $('.search-section').toggleClass('open');
