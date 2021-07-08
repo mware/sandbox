@@ -35,6 +35,15 @@ if ( ! function_exists( 'sandbox_setup' ) ) :
 		 */
 		add_theme_support( 'title-tag' );
 
+		add_theme_support( 'align-wide' ); //  for gutenberg
+
+		add_theme_support( 'editor-color-palette',
+					'#a156b4',
+					'#d0a5db',
+					'#eee',
+					'#444'
+		); // change these to partisan colors or whatever sandbox colors
+
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
